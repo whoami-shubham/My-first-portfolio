@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="icon2.png" />
-
+        <link rel="stylesheet" href="animate.css">
         <style>
             a{
                 text-decoration: none;
@@ -26,15 +26,15 @@
         </header>
       <main>
        <div class="container-fluid">
-           <div class="row F">
+           <div class="row F wow fadeInDown">
             <div class="col-md-12 col-xs-12 col-sm-12">
             <h1 class="intro" title="intro">Hey, I'm Shubham. ;) </h1></div>
            </div>
-            <h2 >About Me</h2>
-            <p class="about"> In the beginning of my journey with computer science  i was full time coder  but now i am also a full stack web developer. I have Interest in each Field which is related to technology that's why i am currently exploring each field of Computer Science . i am also looking for any platform which would give me a chance to exploit my extreme interest in the field of computer Science. </p>
+            <h2 class="wow fadeInDown">About Me</h2>
+            <p class="about wow fadeInDown"> In the beginning of my journey with computer science  i was full time coder  but now i am also a full stack web developer. I have Interest in each Field which is related to technology that's why i am currently exploring each field of Computer Science . i am also looking for any platform which would give me a chance to exploit my extreme interest in the field of computer Science. </p>
            <br>
            
-           <div class="container">
+           <div class="container wow fadeInDown">
            <div class="social">
            <a href="mailto:shubhamkumarjha0013@gmail.com"><button type="button" class="btn btn-default">Gmail</button></a>
            <a href="https://github.com/whoami-shubham"><button type="button" class="btn btn-default">Github</button></a>
@@ -45,7 +45,7 @@
            </div>
            <br>
            <br>
-           <h2> My Projects </h2>
+           <h2 class="wow fadeInDown"> My Projects </h2>
            <br>
            <br>
            <div class="row">
@@ -121,7 +121,10 @@
         </div>
         </footer>
         
-               
+      <script src="wow.min.js"></script>
+       <script>
+              new WOW().init();
+      </script>         
 
     </body>
 </html>
