@@ -1,0 +1,157 @@
+  F{
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Lucida Grande", "Arial", sans-serif;
+    line-height: 1.4;
+    margin: 0 auto;
+    width: 860px;
+}
+.intro{
+    font-size: 4em;
+    color: aliceblue;
+}
+.about{
+        margin-left:20%;
+        margin-right:20%;
+        text-align:justify;
+        color: aliceblue;
+        font-family:monospace;
+        font-size: 18px;
+        
+     }
+h1 {
+    text-align: center;
+    display: block;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+body{
+    background-image: url(5.jpg);
+}
+.projects{
+    background-image: url(footer.png);
+    border: 1px solid black;
+    margin-top: -2px;
+}
+h2{
+    font-family: "europa",sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 1.5em;
+    text-align: center;
+    display: block;
+    color: white;
+} 
+
+.social{
+    text-align: center;
+    margin-top: 10%;
+}
+.btn{
+    border:1px solid #55dafd;
+    background-color: white;
+    margin: 5px;
+}
+.zoom{
+    transition: transform .2s;
+}
+.zoom:hover{
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Row:hover .image {
+  opacity: 0.1;
+}
+
+.Row:hover .middle {
+  opacity: 1;
+}
+
+.row{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.tool{
+    color: aqua;
+}
+@media screen and (max-width:900px){
+    
+    .row{
+        margin: 0;
+        height: 100%;
+    }
+    .btn-primary{
+        font-size: 10px;
+        height: 20px;
+        line-height: 5px;
+    }
+    .on{
+        font-size: 12px;
+    }
+    .about{
+        margin-left:10%;
+        margin-right:10%;
+       }
+}
+
+@media screen and (max-width:575px){
+    .intro{
+        font-size: 2em;
+    }
+    .row{
+        width: 100%;
+    }
+    .col-xs-4{
+          width:50%;
+          }
+    .w{
+        margin-top: -4%;
+    }
+    .c{
+       margin-top: -38%; 
+       height: 150px;
+    }
+    .l{
+        margin-left: 50%;
+        margin-top: -28%;
+    }
+    .f{
+         margin-top: -4%;
+    }
+    .r{
+     margin-top: 8%;
+    }
+   .about{
+       margin-left:5%;
+       margin-right:5%;
+       }
+    .zoom:hover{
+    -ms-transform: scale(1.0); 
+    -webkit-transform: scale(1.0); 
+    transform: scale(1.0); 
+}
+}
