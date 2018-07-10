@@ -8,6 +8,12 @@
 .intro{
     font-size: 4em;
 }
+.about{
+        margin-left:20%;
+        margin-right:20%;
+        text-align:justify;
+        
+     }
 h1 {
     text-align: center;
     display: block;
