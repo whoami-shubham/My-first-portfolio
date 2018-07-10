@@ -45,9 +45,9 @@ h2{
     transition: transform .2s;
 }
 .zoom:hover{
-    -ms-transform: scale(1.0); 
-    -webkit-transform: scale(1.0); 
-    transform: scale(1.0); 
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
 }
 
 .image {
