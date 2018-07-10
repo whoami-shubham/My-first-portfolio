@@ -32,7 +32,6 @@ body{
 }
 .projects{
     background-image: url(footer.png);
-    border: 1px solid black;
     margin-top: -2px;
 }
 h2{
