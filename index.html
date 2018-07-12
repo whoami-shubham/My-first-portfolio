@@ -222,12 +222,7 @@
             <script src="carousel.js"></script>
             <script src="jquery.min.js"></script>
     <script>
-         $(document).ready(function() {
-    setTimeout(function(){
-        $('body').addClass('loaded');
-    }, 2000);
- 
-});
+      
  
   // Init WOW.js and get instance
   var wow = new WOW();
@@ -240,7 +235,12 @@
             new WOW().init();
         }
 });
-        
+           $(document).ready(function() {
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 2000);
+ 
+});
        
         </script>
 
