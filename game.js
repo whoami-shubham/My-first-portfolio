@@ -76,9 +76,14 @@ function touchHandler(e) {
         if(e.touches[0].pageX<canvas.width/2){
             leftkey = true
         }
-        else if (e.touches[0].pageX>canvas.width/2){
+        else{
+            leftkey = false
+        }
+        if (e.touches[0].pageX>canvas.width/2){
          rightkey = true   
         }
+        else{
+            rightkey = false
        
     }
 }
