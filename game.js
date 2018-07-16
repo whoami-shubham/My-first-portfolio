@@ -66,8 +66,8 @@ function drawScore(){
     document.addEventListener('keydown',keyPress,false)
     document.addEventListener('keyup',keyRelease,false)
    
-    document.addEventListener("touchstart", touchHandler);
-    document.addEventListener("touchmove", touchHandler);
+    document.addEventListener("touchstart", touchHandler,false);
+    document.addEventListener("touchmove", touchHandler,false);
 
 // event Handlers
 
