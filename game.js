@@ -65,8 +65,23 @@ function drawScore(){
 
     document.addEventListener('keydown',keyPress,false)
     document.addEventListener('keyup',keyRelease,false)
+   
+    document.addEventListener("touchstart", touchHandler);
+    document.addEventListener("touchmove", touchHandler);
 
 // event Handlers
+
+function touchHandler(e) {
+    if(e.touches) {
+        if(e.touches[0].pageX<canvas.width/2){
+            leftkey = true
+        }
+        else if (e.touches[0].pageX>canvas.width/2){
+         rightkey = true   
+        }
+       
+    }
+}
 
 function keyPress(e){
     if(e.keyCode==39){
