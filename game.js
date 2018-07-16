@@ -11,6 +11,8 @@ var paddlewidth = 80
 var paddleheight = 25
 var leftkey = false
 var rightkey = false
+var lefttouch = false
+var righttouch = false
 var paddlex = (canvas.width- paddlewidth)/2
 var paddley = canvas.height - paddleheight
 var move =8
@@ -66,27 +68,27 @@ function drawScore(){
     document.addEventListener('keydown',keyPress,false)
     document.addEventListener('keyup',keyRelease,false)
    
-    document.addEventListener("touchstart", touchHandler,false);
-    document.addEventListener("touchmove", touchHandler,false);
+    document.addEventListener("touchstart", touchHandler,false)
+    document.addEventListener("touchmove", touchHandler,false)
+    document.addEventListener("touchcancel",untouch,false)
 
 // event Handlers
 
 function touchHandler(e) {
     if(e.touches) {
         if(e.touches[0].pageX<canvas.width/2){
-            leftkey = true
+            lefttouch= true
         }
-        else{
-            leftkey = false
+        else if (e.touches[0].pageX>canvas.width/2){
+         righttouch = true   
         }
-        if (e.touches[0].pageX>canvas.width/2){
-         rightkey = true   
-        }
-        else{
-            rightkey = false
-       
-    }
 }
+}
+
+function untouch(e){
+ lefttouch = false
+ righttouch = false
+    
 }
 
 function keyPress(e){
@@ -240,10 +242,10 @@ update = function(){
     
     
     
-    if(paddlex<canvas.width-paddlewidth && rightkey){
+    if(paddlex<canvas.width-paddlewidth && (rightkey || righttouch)){
         paddlex += move
     }
-    if(paddlex-move>=0 && leftkey){
+    if(paddlex-move>=0 && (leftkey || lefttouch)){
         paddlex -= move
     }
     
