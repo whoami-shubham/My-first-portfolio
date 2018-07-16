@@ -87,6 +87,7 @@ function touchHandler(e) {
        
     }
 }
+}
 
 function keyPress(e){
     if(e.keyCode==39){
