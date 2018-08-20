@@ -210,7 +210,7 @@ function TextAnimation(textGeometry) {
       ]
     },
     {
-      diffuse: 0x0000ff
+      diffuse: 0x000000
     }
   );
 
